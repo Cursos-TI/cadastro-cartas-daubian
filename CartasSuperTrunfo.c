@@ -17,6 +17,7 @@ int main() {
        int pontos_turisticos1 = 50;
        float densidade_populacional1;
        float pib_per_capita1;
+       float super_poder1;
 
        /* =============================================
        Variáveis para a Carta 2 - Salvador
@@ -30,6 +31,7 @@ int main() {
        int pontos_turisticos2 = 40;
        float densidade_populacional2;
        float pib_per_capita2;
+       float super_poder2;
 
        /* =============================================
        Cálculos das Cartas
@@ -41,6 +43,17 @@ int main() {
        pib_per_capita2 = (pib2 * 1000000000) / populacao2;
 
 
+       /* =============================================
+       Cálculo do SuperPoder
+       ============================================= */
+       super_poder1 = populacao1 + area1 + pib1 +
+       pontos_turisticos1 + pib_per_capita1 +
+       (1 / densidade_populacional1);
+
+       super_poder2 = populacao2 + area2 + pib2 +
+       pontos_turisticos2 + pib_per_capita2 +
+       (1 / densidade_populacional2);
+      
        /* =============================================
        Exibição dos dados das cartas cadastradas
        ============================================= */
